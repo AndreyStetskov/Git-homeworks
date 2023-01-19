@@ -1,0 +1,8 @@
+ 1. Как отказаться от изменений в файле (файлах) находящийся в рабочем каталоге (work directory)?
+If some file was modified and it has to undo changes in a separate file, use the command git checkout <file_name>. To make changes to all files, use the git checkout . command.
+
+2. Как вернуть файл из индекса в рабочий каталог?
+If some file was staged and it has to return the file from the index to the work directory, use the command git restore --staged <file_name>.
+
+3. Как отменить ошибочный commit?
+If some file was commited and it has to do changes, use the command git commit --amend, change file and commit it again. To cancel a commit, the command git reset HEAD~<тumber of commits cancelled> helps.
